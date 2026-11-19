@@ -56,6 +56,12 @@ button,a { outline-offset:4px; }
 .button-arrow {font-size:17px;line-height:12px;}
 .button-secondary {border-color:var(--border);color:var(--ink);background:transparent;}
 .button-secondary:hover { border-color:var(--accent); }
+/* CV download placeholder: intentionally disabled until a real CV is published. */
+.button-cv { gap:12px; background:var(--surface); color:var(--muted); border-color:var(--border); cursor:not-allowed; }
+.button-cv:disabled { opacity:1; }
+.button-cv:disabled:hover { transform:none; }
+.cv-soon { display:inline-flex;align-items:center;border-radius:999px;padding:4px 7px;font:700 9px/1 'Space Grotesk',sans-serif;letter-spacing:.03em;text-transform:uppercase;background:var(--surface2);color:var(--muted); }
+
 .hero-bottom {display:flex;align-items:center;gap:16px;margin-top:51px;font-size:12px;line-height:1.75;color:var(--muted);}
 .hero-bottom strong {font-size:12px;color:var(--ink);font-weight:600;}
 .hero-avatars {position:relative;width:43px;height:43px;flex:none;}
